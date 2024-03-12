@@ -1,0 +1,61 @@
+﻿<!-- Views/Welcome/Index.cshtml -->
+@{
+    ViewData["Title"] = "Welcome to Alpha Gym";
+}
+
+<div class="text-center">
+    <h2>@ViewData["Title"]</h2>
+    <p>Get ready to transform your body and mind at Alpha Gym!</p>
+    <p>Our state-of-the-art facilities and expert trainers are here to help you reach your fitness goals.</p>
+</div>
+<div class="container">
+    <!-- Carousel Section -->
+    <div id="gymCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="position: relative;">
+                <img width="600" height="600" src="https://images.squarespace-cdn.com/content/v1/540e6df4e4b037d78af474c8/1532029045816-HIR8QC4JJYBHNAC39YA4/Large+fitness+facility+beaconsfield+gym.jpg" class="d-block w-100" alt="Gym Information 1">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img width="600" height="600" src="https://rwfitness.com/wp-content/uploads/2022/03/Best-Personal-Trainers-in-Edgewater-MD-1024x577.png" class="d-block w-100" alt="Gym Information 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <!---  <h5 style="color: orangered;">Expert Trainers</h5>
+                   <p style="color: orangered;">Our certified trainers are here to guide you every step of the way.</p>-->
+                </div>
+            </div>
+            
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#gymCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#gymCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Members' Results Section -->
+    <div class="container text-center mt-4">
+        <!-- Members' Results Section -->
+        <div>
+            <h2>Members' Results</h2>
+            <p>Check out the incredible transformations our members have achieved.</p>
+        </div>
+        <div class="row mt-4">
+             <div class="col-md-6 d-flex align-items-center">
+               
+                <div class="d-flex">
+                    <img src="https://i.pinimg.com/736x/e4/1d/bf/e41dbf3cdbc24af0e9146cc299c748ad.jpg" class="img-fluid" alt="Members' Results">
+                    <img src="https://i.pinimg.com/1200x/02/85/6a/02856a80219862c22ff928d1c9a91b20.jpg" class="img-fluid" alt="Members' Results">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- Add more content as needed -->
+            </div>
+        </div>
+    </div>
+   
+
+                </div>

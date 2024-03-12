@@ -1,0 +1,33 @@
+﻿@model AlphaGym.Models.Member
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Member Details</h1>
+
+    <div class="col-md-6 mx-auto">
+        
+        <hr />
+
+        <dl class="row">
+            <dt class="col-sm-4">Name:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.Name)</dd>
+
+            <dt class="col-sm-4">Phone Number:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.PhoneNumber)</dd>
+
+            <dt class="col-sm-4">Monthly Subscription:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.MonthlySubscription)</dd>
+
+            <dt class="col-sm-4">Subscription Expiry Date:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.SubscriptionExpiryDate)</dd>
+        </dl>
+    </div>
+
+    <div class="mt-3 text-center">
+        <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-primary">Edit</a> |
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    </div>
+</div>

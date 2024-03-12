@@ -1,0 +1,74 @@
+﻿@model AlphaGym.Models.Member
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<script>
+    window.onload = function () {
+        // Get the input element for Subscription Months
+        var subscriptionMonthsInput = document.getElementById('subscriptionMonths');
+        // Get the input element for Monthly Subscription
+        var monthlySubscriptionInput = document.getElementById('MonthlySubscription');
+
+        // Add event listener to Subscription Months input
+        subscriptionMonthsInput.addEventListener('input', function () {
+            // Set the value of Monthly Subscription to the value of Subscription Months
+            monthlySubscriptionInput.value = subscriptionMonthsInput.value;
+        });
+    };
+</script>
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Create Member</h1>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form asp-action="Create" class="needs-validation" novalidate>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="mb-3">
+                    <label asp-for="Name" class="form-label">Name:</label>
+                    <input asp-for="Name" class="form-control" required />
+                    <div class="invalid-feedback">@Html.ValidationMessageFor(model => model.Name)</div>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="PhoneNumber" class="form-label">Phone Number:</label>
+                    <input asp-for="PhoneNumber" class="form-control" required />
+                    <div class="invalid-feedback">@Html.ValidationMessageFor(model => model.PhoneNumber)</div>
+                </div>
+
+                <div class="mb-3" hidden>
+                    <label asp-for="MonthlySubscription" class="form-label">Monthly Subscription:</label>
+                    <input asp-for="MonthlySubscription" class="form-control" id="MonthlySubscription" required />
+                    <div class="invalid-feedback">@Html.ValidationMessageFor(model => model.MonthlySubscription)</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="subscriptionStartDate" class="form-label">Subscription Start Date:</label>
+                    <input type="date" class="form-control" id="subscriptionStartDate" name="subscriptionStartDate" required />
+                </div>
+
+                <div class="mb-3">
+                    <label for="subscriptionMonths" class="form-label">Subscription Months:</label>
+                    <input type="number" class="form-control" id="subscriptionMonths" name="subscriptionMonths" required />
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Create</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="text-center mt-3">
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

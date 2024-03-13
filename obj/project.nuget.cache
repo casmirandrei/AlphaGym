@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WG8rpG7kgJXe64C7qG9Nv2LQ2a/GGlJKXMDIoY/QpTMAzVXzro5ol0gVFwPf/SF5duV6SAQ/7jsILroY99qXLA==",
+  "dgSpecHash": "zZgi+2YRZtO1M7S6mtwEpijWLl8UKdBBpDwLIGB82JqpLJZ0Z+UDSxJCeIPJNrpoB6StAbTF1Uyq+7m5sbJFBw==",
   "success": true,
-  "projectFilePath": "D:\\Facultate\\Gym\\AlphaGym\\AlphaGym.csproj",
+  "projectFilePath": "D:\\Facultate\\Alpha_Gym_git\\AlphaGym.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andrei.casmir\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\andrei.casmir\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

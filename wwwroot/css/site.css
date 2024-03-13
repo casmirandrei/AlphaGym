@@ -3,9 +3,9 @@ html {
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
@@ -18,6 +18,46 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: white;
 }
 
+.input-validation-error {
+    border: 2px solid red;
+}
+
+.table-bordered td,
+.table-bordered th {
+    border: 1px solid black; /* Set border style */
+    padding: 8px; /* Add padding for better spacing */
+}
+.center-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh; /* Optional: Set minimum height for full viewport */
+}
+.create_button {
+    display: inline-block;
+    padding: 10px 20px; /* Adjusted padding */
+    font-size: 20px; /* Adjusted font size */
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #3e8e41;
+    border: none;
+    border-radius: 10px; /* Adjusted border radius */
+    box-shadow: 0 6px #999; /* Adjusted box shadow */
+}
+
+    .create_button:hover {
+        background-color: #3e8e41;
+    }
+
+    .create_button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 3px #666; /* Adjusted box shadow */
+        transform: translateY(2px); /* Adjusted translateY */
+    }

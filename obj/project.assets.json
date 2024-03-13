@@ -8724,11 +8724,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Facultate\\Gym\\AlphaGym\\AlphaGym.csproj",
+      "projectUniqueName": "D:\\Facultate\\Alpha_Gym_git\\AlphaGym.csproj",
       "projectName": "AlphaGym",
-      "projectPath": "D:\\Facultate\\Gym\\AlphaGym\\AlphaGym.csproj",
+      "projectPath": "D:\\Facultate\\Alpha_Gym_git\\AlphaGym.csproj",
       "packagesPath": "C:\\Users\\andrei.casmir\\.nuget\\packages\\",
-      "outputPath": "D:\\Facultate\\Gym\\AlphaGym\\obj\\",
+      "outputPath": "D:\\Facultate\\Alpha_Gym_git\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\andrei.casmir\\AppData\\Roaming\\NuGet\\NuGet.Config",

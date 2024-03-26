@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AlphaGym")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35989510f23b1a199f189730dc34dcb766544c88")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4dece56d213d068befdcaef190245349244736df")]
 [assembly: System.Reflection.AssemblyProductAttribute("AlphaGym")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AlphaGym")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

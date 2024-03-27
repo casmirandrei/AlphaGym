@@ -25,10 +25,6 @@
       "PackagePath": "staticwebassets\\favicon3.png"
     },
     {
-      "Id": "D:\\Facultate\\Alpha_Gym_git\\wwwroot\\gym_logo.png",
-      "PackagePath": "staticwebassets\\gym_logo.png"
-    },
-    {
       "Id": "D:\\Facultate\\Alpha_Gym_git\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

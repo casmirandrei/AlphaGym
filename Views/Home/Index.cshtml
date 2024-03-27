@@ -1,7 +1,9 @@
 ﻿<!-- Views/Welcome/Index.cshtml -->
 @{
     ViewData["Title"] = "Welcome to Alpha Gym";
+   
 }
+
 
 <div class="text-center">
     <h2>@ViewData["Title"]</h2>
@@ -20,8 +22,6 @@
             <div class="carousel-item">
                 <img width="600" height="600" src="https://rwfitness.com/wp-content/uploads/2022/03/Best-Personal-Trainers-in-Edgewater-MD-1024x577.png" class="d-block w-100" alt="Gym Information 2">
                 <div class="carousel-caption d-none d-md-block">
-                    <!---  <h5 style="color: orangered;">Expert Trainers</h5>
-                   <p style="color: orangered;">Our certified trainers are here to guide you every step of the way.</p>-->
                 </div>
             </div>
             
@@ -34,6 +34,150 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
+    </div>
+    <!-- Reasons -->
+    <section id="reasons">
+        <h1 style="text-align:center; padding:1%">Unleash Your Potential: Why Choose Us?</h1>
+        <div id="benefits">
+            <div id="benefits-physical">
+                <div>
+                    <h3>Cardio exercises <i class="fa-solid fa-heart-pulse" aria-hidden="true"></i></h3>
+                    <hr>
+                    <p>
+                        Gym cardio exercises, such as running and cycling, improve heart health and increase endurance. They also aid in weight loss by burning calories effectively.
+                    </p>
+                </div>
+                <div>
+                    <h3>Personal Training <i class="fa-solid fa-dumbbell" aria-hidden="true"></i></h3>
+                    <hr>
+                    <p>
+                        Personal training at the gym provides tailored workouts and expert guidance for optimal fitness results. With personalized attention, individuals achieve their goals faster and develop proper techniques for injury prevention.
+                    </p>
+                </div>
+            </div>
+            <div id="benefits-image">
+                    <img src="favicon3.png" alt="Gym Logo" />
+            </div>
+            <div id="benefits-mental">
+                <div>
+                    <h3>Muscular Hypertrophy <i class="fa-solid fa-weight-hanging"></i></h3>
+                    <hr>
+                    <p>
+                        Physical exercises at the gym stimulate muscle growth and enhance strength. Consistent resistance training leads to increased muscle mass and improved overall physique.
+                    </p>
+                </div>
+                <div>
+                    <h3>Socialize <i class="fa-solid fa-globe" aria-hidden="true"></i></h3>
+                    <hr>
+                    <p>
+
+                        Socializing at the gym fosters a supportive community and boosts motivation. Engaging with others during workouts enhances enjoyment and accountability.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SUBSCRIPTION -->
+    <div class="pricing-plan-container">
+        <section class="pricing-plan">
+            <div class="pricing-plan__header">
+                <h1 class="pricing-plan__title">Half day subscription </h1>
+            </div>
+            <div class="pricing-plan__description">
+                <ul class="pricing-plan__list">
+                    <li class="pricing-plan__feature"> Access to gym facilities</li>
+                    <li class="pricing-plan__feature"> Entrance until 16:00</li>
+                    <li class="pricing-plan__feature"> 1 entry per day</li>
+                </ul>
+            </div>
+            <div class="pricing-plan__actions">
+                <p class="pricing-plan__cost">$30</p>
+                <p class="pricing-plan__text">per month</p>
+                @if (!User.Identity.IsAuthenticated)
+                {
+                    <a href="https://localhost:7058/Identity/Account/Login" class="pricing-plan__button btn btn-primary">Login to Purchase</a>
+                }
+                else
+                {
+                    <a href="#" class="pricing-plan__button btn btn-primary disabled">Purchase</a>
+                }
+                <p class="pricing-plan__text">Enhance Fitness</p>
+            </div>
+        </section>
+
+
+        <section class="pricing-plan pricing-plan--highlighted">
+            <div class="pricing-plan__special-text"> Recommended
+            </div>
+            <div class="pricing-plan__header">
+                <h1 class="pricing-plan__title">All day subcription</h1>
+                <h3 class="pricing-plan__summary">For fitness enthusiasts</h3>
+            </div>
+            <div class="pricing-plan__description">
+                <ul class="pricing-plan__list">
+                    <li class="pricing-plan__feature"> Access to all facilities and classes</li>
+                    <li class="pricing-plan__feature"> No entry limit</li>
+            </div>
+            <div class="pricing-plan__actions">
+                <p class="pricing-plan__cost">$40</p>
+                <p class="pricing-plan__text">per month</p>
+                @if (!User.Identity.IsAuthenticated)
+                {
+                    <a href="https://localhost:7058/Identity/Account/Login" class="pricing-plan__button btn btn-primary">Login to Purchase</a>
+                }
+                else
+                {
+                    <a href="#" class="pricing-plan__button btn btn-primary disabled">Purchase</a>
+                }
+                <p class="pricing-plan__text">Achieve Peak Performance</p>
+            </div>
+        </section> 
+
+        <section class="pricing-plan pricing-plan--highlighted">
+            <div class="pricing-plan__header">
+                <h1 class="pricing-plan__title">Personal trainer subscription</h1>
+                <h3 class="pricing-plan__summary">Maximize your strenght</h3>
+            </div>
+            <div class="pricing-plan__description">
+                <ul class="pricing-plan__list">
+                    <li class="pricing-plan__feature"> Access to all facilities and classes</li>
+                    <li class="pricing-plan__feature"> No entry limit</li>
+                    <li class="pricing-plan__feature"> Personalized workouts</li>
+                    <li class="pricing-plan__feature"> Progress tracking and goal setting</li>
+            </div>
+            <div class="pricing-plan__actions">
+                <p class="pricing-plan__cost">$100</p>
+                <p class="pricing-plan__text">per month</p>
+                @if (!User.Identity.IsAuthenticated)
+                {
+                    <a href="https://localhost:7058/Identity/Account/Login" class="pricing-plan__button btn btn-primary">Login to Purchase</a>
+                }
+                else
+                {
+                    <a href="#" class="pricing-plan__button btn btn-primary disabled">Purchase</a>
+                }
+                <p class="pricing-plan__text">Unlock Your Potential</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Opening hours -->
+    <div class="schedule">
+        <h1 class="schedule-title">Gym Schedule</h1>
+        <div class="hours-container">
+            <div class="opening-hours">
+                <div class="day">Monday - Friday</div>
+                <div class="time">6:00 AM - 10:00 PM</div>
+            </div>
+            <div class="opening-hours">
+                <div class="day">Saturday</div>
+                <div class="time">8:00 AM - 8:00 PM</div>
+            </div>
+            <div class="opening-hours">
+                <div class="day">Sunday</div>
+                <div class="time">9:00 AM - 6:00 PM</div>
+            </div>
+        </div>
     </div>
 
    

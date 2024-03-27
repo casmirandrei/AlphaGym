@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "m8aGm8b0Igoj28cF8HfMGSzbNvzMPyxHZUjjpPG6iAs=",
+  "Hash": "01R45HzT/BlLQzFk/z72yEoj039apMsbxtBK1kn5tcA=",
   "Source": "AlphaGym",
   "BasePath": "_content/AlphaGym",
   "Mode": "Default",
@@ -1326,25 +1326,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon3.png"
-    },
-    {
-      "Identity": "D:\\Facultate\\Alpha_Gym_git\\wwwroot\\gym_logo.png",
-      "SourceId": "AlphaGym",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Facultate\\Alpha_Gym_git\\wwwroot\\",
-      "BasePath": "_content/AlphaGym",
-      "RelativePath": "gym_logo.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\gym_logo.png"
     },
     {
       "Identity": "D:\\Facultate\\Alpha_Gym_git\\wwwroot\\js\\site.js",

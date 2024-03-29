@@ -99,10 +99,14 @@
                 }
                 else
                 {
-                    <a href="#" class="pricing-plan__button btn btn-primary disabled">Purchase</a>
+                    @if (!User.IsInRole("administrator"))
+                    {
+                        <a href="#" class="pricing-plan__button btn btn-primary disabled">Purchase</a>
+                    }
                 }
                 <p class="pricing-plan__text">Enhance Fitness</p>
             </div>
+
         </section>
 
 
@@ -127,7 +131,10 @@
                 }
                 else
                 {
-                    <a href="#" class="pricing-plan__button btn btn-primary disabled">Purchase</a>
+                    @if (!User.IsInRole("administrator"))
+                    {
+                        <a href="#" class="pricing-plan__button btn btn-primary disabled">Purchase</a>
+                    }
                 }
                 <p class="pricing-plan__text">Achieve Peak Performance</p>
             </div>
@@ -154,7 +161,10 @@
                 }
                 else
                 {
-                    <a href="#" class="pricing-plan__button btn btn-primary disabled">Purchase</a>
+                    @if (!User.IsInRole("administrator"))
+                    {
+                        <a href="#" class="pricing-plan__button btn btn-primary disabled">Purchase</a>
+                    }
                 }
                 <p class="pricing-plan__text">Unlock Your Potential</p>
             </div>

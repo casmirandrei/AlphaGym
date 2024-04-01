@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Facultate\\Alpha_Gym_git\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|d:\\facultate\\alpha_gym_git\\areas\\identity\\pages\\account\\loginwith2fa.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:areas\\identity\\pages\\account\\loginwith2fa.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|d:\\facultate\\alpha_gym_git\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -23,6 +27,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "LoginWith2fa.cshtml",
+              "DocumentMoniker": "D:\\Facultate\\Alpha_Gym_git\\Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml",
+              "ToolTip": "D:\\Facultate\\Alpha_Gym_git\\Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAADUAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-29T10:51:48.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Facultate\\Alpha_Gym_git\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -35,7 +52,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "site.css",
               "DocumentMoniker": "D:\\Facultate\\Alpha_Gym_git\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",

@@ -34,3 +34,4 @@ namespace AlphaGym.Models
 
     }
 }
+// De implementat: tipul de abonament dintre cele 3 pe fiecare persoana, dropdown

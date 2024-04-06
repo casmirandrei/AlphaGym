@@ -12,10 +12,11 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("2f142d7d-1177-4929-88dc-88c07253b9ff")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("AlphaGym")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5863e54c21f32bc937af4bd80901449f9626175e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1f0b166f46fee60691885b8a2a0ca664af61cd8")]
 [assembly: System.Reflection.AssemblyProductAttribute("AlphaGym")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AlphaGym")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

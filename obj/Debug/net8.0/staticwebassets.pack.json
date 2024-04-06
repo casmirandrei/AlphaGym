@@ -25,8 +25,24 @@
       "PackagePath": "staticwebassets\\favicon3.png"
     },
     {
+      "Id": "D:\\Facultate\\Alpha_Gym_git\\wwwroot\\js\\qr.js",
+      "PackagePath": "staticwebassets\\js\\qr.js"
+    },
+    {
       "Id": "D:\\Facultate\\Alpha_Gym_git\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Facultate\\Alpha_Gym_git\\wwwroot\\lib\\.gitignore",
+      "PackagePath": "staticwebassets\\lib\\.gitignore"
+    },
+    {
+      "Id": "D:\\Facultate\\Alpha_Gym_git\\wwwroot\\lib\\LICENSE",
+      "PackagePath": "staticwebassets\\lib"
+    },
+    {
+      "Id": "D:\\Facultate\\Alpha_Gym_git\\wwwroot\\lib\\README.md",
+      "PackagePath": "staticwebassets\\lib\\README.md"
     },
     {
       "Id": "D:\\Facultate\\Alpha_Gym_git\\wwwroot\\lib\\bootstrap\\LICENSE",
@@ -209,6 +225,22 @@
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
+      "Id": "D:\\Facultate\\Alpha_Gym_git\\wwwroot\\lib\\bower.json",
+      "PackagePath": "staticwebassets\\lib\\bower.json"
+    },
+    {
+      "Id": "D:\\Facultate\\Alpha_Gym_git\\wwwroot\\lib\\index-svg.html",
+      "PackagePath": "staticwebassets\\lib\\index-svg.html"
+    },
+    {
+      "Id": "D:\\Facultate\\Alpha_Gym_git\\wwwroot\\lib\\index.html",
+      "PackagePath": "staticwebassets\\lib\\index.html"
+    },
+    {
+      "Id": "D:\\Facultate\\Alpha_Gym_git\\wwwroot\\lib\\index.svg",
+      "PackagePath": "staticwebassets\\lib\\index.svg"
+    },
+    {
       "Id": "D:\\Facultate\\Alpha_Gym_git\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
@@ -241,6 +273,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
+      "Id": "D:\\Facultate\\Alpha_Gym_git\\wwwroot\\lib\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery.min.js"
+    },
+    {
       "Id": "D:\\Facultate\\Alpha_Gym_git\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
@@ -255,6 +291,14 @@
     {
       "Id": "D:\\Facultate\\Alpha_Gym_git\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\Facultate\\Alpha_Gym_git\\wwwroot\\lib\\qrcode.js",
+      "PackagePath": "staticwebassets\\lib\\qrcode.js"
+    },
+    {
+      "Id": "D:\\Facultate\\Alpha_Gym_git\\wwwroot\\lib\\qrcode.min.js",
+      "PackagePath": "staticwebassets\\lib\\qrcode.min.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AlphaGym.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -19,7 +19,7 @@ html {
 
 body {
     margin-bottom: 60px;
-    background-color: white;
+    background-color: #ffffff;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -206,17 +206,18 @@ body {
 .schedule {
     width: 80%;
     margin: 20px auto;
-    background-color: #98cbdb;
+    background-color: #343a40;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
 }
 
 .schedule-title {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 15px;
-    color: #333; /* Adjust text color as needed */
+    color: white; /* Adjust text color as needed */
 }
 
 .hours-container {

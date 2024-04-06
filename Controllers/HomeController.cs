@@ -1,7 +1,11 @@
 using AlphaGym.Models;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.Google;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Security.Claims;
 
 namespace AlphaGym.Controllers
 {
@@ -19,7 +23,7 @@ namespace AlphaGym.Controllers
             return View();
         }
 
-       
+
         public IActionResult Privacy()
         {
             return View();
@@ -30,5 +34,6 @@ namespace AlphaGym.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+      
     }
 }

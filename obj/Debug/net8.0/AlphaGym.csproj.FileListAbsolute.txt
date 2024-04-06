@@ -845,3 +845,6 @@ D:\Facultate\Alpha_Gym_git\obj\Debug\net8.0\AlphaGym.pdb
 D:\Facultate\Alpha_Gym_git\obj\Debug\net8.0\AlphaGym.genruntimeconfig.cache
 D:\Facultate\Alpha_Gym_git\obj\Debug\net8.0\ref\AlphaGym.dll
 D:\Facultate\Alpha_Gym_git\obj\Debug\net8.0\AlphaGym.csproj.Up2Date
+D:\Facultate\Alpha_Gym_git\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Google.dll
+D:\Facultate\Alpha_Gym_git\bin\Debug\net8.0\Microsoft.Owin.dll
+D:\Facultate\Alpha_Gym_git\bin\Debug\net8.0\Owin.dll

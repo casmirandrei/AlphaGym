@@ -22,25 +22,6 @@ namespace AlphaGym.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("AlphaGym.Models.Gym", b =>
-                {
-                    b.Property<int>("GymId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("GymId"));
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("GymId");
-
-                    b.ToTable("Gyms");
-                });
-
             modelBuilder.Entity("AlphaGym.Models.Member", b =>
                 {
                     b.Property<int>("Id")
@@ -48,9 +29,6 @@ namespace AlphaGym.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int?>("GymId")
-                        .HasColumnType("int");
 
                     b.Property<int>("MonthlySubscription")
                         .HasColumnType("int");
@@ -71,9 +49,11 @@ namespace AlphaGym.Migrations
                     b.Property<DateTime>("SubscriptionStartDate")
                         .HasColumnType("datetime2");
 
-                    b.HasKey("Id");
+                    b.Property<string>("SubscriptionType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.HasIndex("GymId");
+                    b.HasKey("Id");
 
                     b.ToTable("Members");
                 });
@@ -280,13 +260,6 @@ namespace AlphaGym.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("AlphaGym.Models.Member", b =>
-                {
-                    b.HasOne("AlphaGym.Models.Gym", null)
-                        .WithMany("Members")
-                        .HasForeignKey("GymId");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -336,11 +309,6 @@ namespace AlphaGym.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("AlphaGym.Models.Gym", b =>
-                {
-                    b.Navigation("Members");
                 });
 #pragma warning restore 612, 618
         }

@@ -11,7 +11,7 @@ namespace AlphaGym.Models
     : base(options)
         { }
 
-        public DbSet<Gym>? Gyms { get; set; }
+       // public DbSet<Gym>? Gyms { get; set; }
         public DbSet<Member>? Members { get; set; }
 
     }

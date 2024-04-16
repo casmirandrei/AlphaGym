@@ -20,11 +20,24 @@
                 </div>
 
                 <div class="mb-3">
+                    <label asp-for="SubscriptionType">Subscription Type:</label>
+                    <select asp-for="SubscriptionType" id="subscriptionType" name="SubscriptionType" class="form-control" required>
+                        <option value="">Select Subscription</option>
+                        <option value="All day">All day</option>
+                        <option value="Half Day">Half Day</option>
+                        <option value="Personal Trainer">Personal Trainer</option>
+                        <option value="Student">Student</option>
+                        <option value="Special">Special</option>
+                    </select>
+                    <span asp-validation-for="SubscriptionType" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
                     <label asp-for="PhoneNumber" class="form-label">Phone Number:</label>
                     <input asp-for="PhoneNumber" class="form-control" required />
                     <div class="invalid-feedback">@Html.ValidationMessageFor(model => model.PhoneNumber)</div>
                 </div>
-
+              
                 <div class="mb-3">
                     <label asp-for="MonthlySubscription" class="form-label">Monthly Subscription:</label>
                     <input asp-for="MonthlySubscription" class="form-control" required />

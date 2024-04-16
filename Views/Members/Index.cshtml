@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "Member List";
 }
-<div class="container mx-auto my-8 p-8 bg-gray-100 rounded-lg">
+<div class="container mx-auto my-8 p-8 bg-gray-100 rounded-lg" style="margin-bottom:1%">
     <div class="text-center mb-8">
         <h1 class="text-4xl font-semibold">Member List</h1>
         <div class="mt-4">
@@ -29,6 +29,7 @@
             <thead>
                 <tr>
                     <th class="px-4 py-2">Name</th>
+                    <th class="px-4 py-2">Subscription Type</th>
                     <th class="px-4 py-2">Phone Number</th>
                     <th class="px-4 py-2">Monthly Subscription</th>
                     <th class="px-4 py-2">Subscription Expiry Date</th>
@@ -40,6 +41,7 @@
                 {
                     <tr>
                         <td class="px-4 py-2">@Html.DisplayFor(modelItem => item.Name)</td>
+                        <td class="px-4 py-2">@Html.DisplayFor(modelItem => item.SubscriptionType)</td>
                         <td class="px-4 py-2">@Html.DisplayFor(modelItem => item.PhoneNumber)</td>
                         <td class="px-4 py-2">@Html.DisplayFor(modelItem => item.MonthlySubscription)</td>
                         <td class="px-4 py-2">

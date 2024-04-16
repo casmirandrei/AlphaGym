@@ -7,28 +7,28 @@
 <div class="container mt-5">
     <h1 class="text-center mb-4">Delete Member</h1>
 
-   
-
     <div class="row justify-content-center">
-        <div class="col-md-6">
-          
-            <hr />
+        <div class="col-md-8">
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <th>Name</th>
+                        <th>Subscription Type</th>
+                        <th>Phone Number</th>
+                        <th>Monthly Subscription</th>
+                        <th>Subscription Expiry Date</th>
+                    </tr>
+                    <tr>
+                        <td>@Html.DisplayFor(model => model.Name)</td>
+                        <td>@Html.DisplayFor(model => model.SubscriptionType)</td>
+                        <td>@Html.DisplayFor(model => model.PhoneNumber)</td>
+                        <td>@Html.DisplayFor(model => model.MonthlySubscription)</td>
+                        <td>@Html.DisplayFor(model => model.SubscriptionExpiryDate)</td>
+                    </tr>
+                </tbody>
+            </table>
 
-            <dl class="row">
-                <dt class="col-sm-4">Name:</dt>
-                <dd class="col-sm-8">@Html.DisplayFor(model => model.Name)</dd>
-
-                <dt class="col-sm-4">Phone Number:</dt>
-                <dd class="col-sm-8">@Html.DisplayFor(model => model.PhoneNumber)</dd>
-
-                <dt class="col-sm-4">Monthly Subscription:</dt>
-                <dd class="col-sm-8">@Html.DisplayFor(model => model.MonthlySubscription)</dd>
-
-                <dt class="col-sm-4">Subscription Expiry Date:</dt>
-                <dd class="col-sm-8">@Html.DisplayFor(model => model.SubscriptionExpiryDate)</dd>
-            </dl>
-
-            <form asp-action="Delete" class="mt-3">
+            <form asp-action="Delete">
                 <input type="hidden" asp-for="Id" />
                 <button type="submit" class="btn btn-danger">Delete</button> |
                 <a asp-action="Index" class="btn btn-secondary">Back to List</a>

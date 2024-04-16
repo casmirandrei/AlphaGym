@@ -73,15 +73,15 @@ namespace AlphaGym.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,PhoneNumber,MonthlySubscription,SubscriptionExpiryDate")] Member member, DateTime subscriptionStartDate, int subscriptionMonths)
+        public async Task<IActionResult> Create([Bind("Id,Name,PhoneNumber,SubscriptionType,MonthlySubscription,SubscriptionExpiryDate")] Member member, DateTime subscriptionStartDate, int subscriptionMonths, string SubscriptionType)
         {
             if (ModelState.IsValid)
             {
-                // seteaza subscription start date
+                // set subscription date
                 member.SubscriptionStartDate = subscriptionStartDate;
-                // Calculeaza numarul de zile adaugate bazate pe cate luni dureaza abonamentul 
+                //  calculate the total months for subscription
                 int totalDaysToAdd = subscriptionMonths * 30;
-                // Seteaza automat expiration date
+                // automatically set subscription expiry date
                 member.SubscriptionExpiryDate = subscriptionStartDate.AddDays(totalDaysToAdd);
 
                 // Add the member to the database
@@ -114,7 +114,7 @@ namespace AlphaGym.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,PhoneNumber,MonthlySubscription,SubscriptionExpiryDate")] Member member)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,PhoneNumber,SubscriptionType,MonthlySubscription,SubscriptionExpiryDate")] Member member)
         {
             if (id != member.Id)
             {

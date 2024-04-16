@@ -6,6 +6,8 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Net.Mail;
+using System.Net;
 using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading;
@@ -154,6 +156,7 @@ namespace AlphaGym.Areas.Identity.Pages.Account
             return Page();
         }
 
+        
         private IdentityUser CreateUser()
         {
             try

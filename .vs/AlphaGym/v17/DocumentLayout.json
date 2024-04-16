@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "D:\\Facultate\\Alpha_Gym_git\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|d:\\facultate\\alpha_gym_git\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|d:\\facultate\\alpha_gym_git\\controllers\\memberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:controllers\\memberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|d:\\facultate\\alpha_gym_git\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|d:\\facultate\\alpha_gym_git\\views\\members\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:views\\members\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|d:\\facultate\\alpha_gym_git\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|d:\\facultate\\alpha_gym_git\\views\\members\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:views\\members\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|d:\\facultate\\alpha_gym_git\\views\\members\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:views\\members\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|d:\\facultate\\alpha_gym_git\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|d:\\facultate\\alpha_gym_git\\views\\members\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:views\\members\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|d:\\facultate\\alpha_gym_git\\views\\members\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:views\\members\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +43,93 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\Facultate\\Alpha_Gym_git\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ToolTip": "D:\\Facultate\\Alpha_Gym_git\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ViewState": "AQIAADsAAAAA+P////8EwEUAAAAhAAAA",
+              "Title": "MembersController.cs",
+              "DocumentMoniker": "D:\\Facultate\\Alpha_Gym_git\\Controllers\\MembersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MembersController.cs",
+              "ToolTip": "D:\\Facultate\\Alpha_Gym_git\\Controllers\\MembersController.cs",
+              "RelativeToolTip": "Controllers\\MembersController.cs",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAmwHkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T19:35:45.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Facultate\\Alpha_Gym_git\\Views\\Members\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Members\\Delete.cshtml",
+              "ToolTip": "D:\\Facultate\\Alpha_Gym_git\\Views\\Members\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Members\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAIwA8AAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-05T13:08:32.098Z",
+              "WhenOpened": "2024-04-16T19:27:44.642Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "D:\\Facultate\\Alpha_Gym_git\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "D:\\Facultate\\Alpha_Gym_git\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAACgAAAA",
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Facultate\\Alpha_Gym_git\\Views\\Members\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Members\\Details.cshtml",
+              "ToolTip": "D:\\Facultate\\Alpha_Gym_git\\Views\\Members\\Details.cshtml",
+              "RelativeToolTip": "Views\\Members\\Details.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAIwA8AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-05T12:56:56.058Z",
+              "WhenOpened": "2024-04-16T19:24:22.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Facultate\\Alpha_Gym_git\\Views\\Members\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Members\\Index.cshtml",
+              "ToolTip": "D:\\Facultate\\Alpha_Gym_git\\Views\\Members\\Index.cshtml",
+              "RelativeToolTip": "Views\\Members\\Index.cshtml",
+              "ViewState": "AQIAAAoAAAAA/v///38ZwCAAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T19:19:12.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Member.cs",
+              "DocumentMoniker": "D:\\Facultate\\Alpha_Gym_git\\Models\\Member.cs",
+              "RelativeDocumentMoniker": "Models\\Member.cs",
+              "ToolTip": "D:\\Facultate\\Alpha_Gym_git\\Models\\Member.cs",
+              "RelativeToolTip": "Models\\Member.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAQwCcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T19:17:13.632Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\Facultate\\Alpha_Gym_git\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "D:\\Facultate\\Alpha_Gym_git\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAAwBsAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-05T12:56:13.127Z"
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Facultate\\Alpha_Gym_git\\Views\\Members\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Members\\Create.cshtml",
+              "ToolTip": "D:\\Facultate\\Alpha_Gym_git\\Views\\Members\\Create.cshtml",
+              "RelativeToolTip": "Views\\Members\\Create.cshtml",
+              "ViewState": "AQIAABAAAACA/f///38ZwCwAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T19:03:57.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Facultate\\Alpha_Gym_git\\Views\\Members\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Members\\Edit.cshtml",
+              "ToolTip": "D:\\Facultate\\Alpha_Gym_git\\Views\\Members\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Members\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T19:04:35.735Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -47,10 +47,10 @@
                         <td class="px-4 py-2">
                             <span class="subscription-date">@Html.DisplayFor(modelItem => item.SubscriptionExpiryDate)</span>
                         </td>
-                        <td class="px-4 py-2">
-                            <a class="text-blue-500 hover:underline mr-2" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                            <a class="text-green-500 hover:underline mr-2" asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                            <a class="text-red-500 hover:underline" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        <td>
+                            <a class="btn btn-sm btn-primary mr-2" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                            <a class="btn btn-sm btn-info mr-2" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                            <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
                         </td>
                     </tr>
                 }

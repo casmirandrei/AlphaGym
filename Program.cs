@@ -7,8 +7,9 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
 using System.Configuration;
 using SendGrid.Extensions.DependencyInjection;
-
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
+using AlphaGym.Services;
+
 
 
 
@@ -49,7 +50,15 @@ builder.Services.Configure<IdentityOptions>(options =>
     //Required unique email
     options.User.RequireUniqueEmail = true;
 });
-
+// Add session and cart service
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+builder.Services.AddScoped<CartService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -64,11 +73,15 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+
 app.UseAuthentication();
 app.UseAuthorization();
-
+app.UseSession(); // Add this line to enable session
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
 app.Run();
+
+

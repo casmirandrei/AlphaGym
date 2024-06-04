@@ -1,0 +1,114 @@
+﻿@model IEnumerable<(AlphaGym.Models.Product Product, int Quantity)>
+
+@{
+    ViewData["Title"] = "Shopping Cart";
+}
+
+<h2>Shopping Cart</h2>
+
+@if (Model.Any())
+{
+    <p>You have @ViewBag.CartCount items in your cart.</p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Product.ProductName</td>
+                    <td>@item.Product.Description</td>
+                    <td>@item.Product.UnitPrice.ToString("C")</td>
+                    <td>@item.Quantity</td>
+                    <td>@((item.Product.UnitPrice * item.Quantity).ToString("C"))</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="text-right">
+        <p><strong>Total Checkout: @ViewBag.CartTotal</strong></p>
+        @if (User.Identity.IsAuthenticated)
+        {
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checkoutModal">
+                Checkout
+            </button>
+        }
+        else
+        {
+            <p>Please <a href="@Url.Page("/Account/Login", new { area = "Identity" })">log in</a> to proceed to checkout.</p>
+        }
+        <a href="@Url.Action("ClearCart", "Products")" class="btn btn-secondary">Clear</a>
+    </div>
+}
+else
+{
+    <p>Your cart is empty.</p>
+}
+
+<!-- Modal -->
+<div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="checkoutModalLabel">Checkout</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="checkoutForm" method="post" action="@Url.Action("Checkout", "Products")">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="Email" value="@User.Identity.Name" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="tel" class="form-control" id="phoneNumber" name="PhoneNumber" pattern="\d{10}" maxlength="10" title="Please enter a valid 10-digit phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="tel" class="form-control" id="cardNumber" name="CardNumber" pattern="\d{16}" maxlength="16" title="Please enter a valid 16-digit card number" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#phoneNumber').on('input', function () {
+                this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10);
+            });
+
+            $('#cardNumber').on('input', function () {
+                this.value = this.value.replace(/[^0-9]/g, '').slice(0, 16);
+            });
+
+            $('#checkoutForm').on('submit', function (event) {
+                event.preventDefault();
+                var phoneNumber = $('#phoneNumber').val();
+                var cardNumber = $('#cardNumber').val();
+                var phonePattern = /^\d{10}$/;
+                var cardPattern = /^\d{16}$/;
+
+                if (!phonePattern.test(phoneNumber)) {
+                    alert("Please enter a valid 10-digit phone number.");
+                } else if (!cardPattern.test(cardNumber)) {
+                    alert("Please enter a valid 16-digit card number.");
+                } else {
+                    this.submit();
+                }
+            });
+        });
+    </script>
+}

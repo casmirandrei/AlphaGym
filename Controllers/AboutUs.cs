@@ -1,10 +1,15 @@
 ﻿using AlphaGym.Models;
+using AlphaGym.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AlphaGym.Controllers
 {
-    public class AboutUs : Controller
+    public class AboutUs : BaseController
     {
+        public AboutUs(CartService cartService) : base(cartService)
+        {
+        }
+
         public IActionResult Index()
         {
             var model = new AboutUsViewModel

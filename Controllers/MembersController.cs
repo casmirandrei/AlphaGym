@@ -8,16 +8,17 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using AlphaGym.Models;
 using Microsoft.AspNetCore.Authorization;
+using AlphaGym.Services;
 
 
 namespace AlphaGym.Controllers
 {
     [Authorize (Roles ="administrator")]
-    public class MembersController : Controller
+    public class MembersController : BaseController
     {
         private readonly GymContext _context;
 
-        public MembersController(GymContext context)
+        public MembersController(CartService cartService, GymContext context) : base(cartService)
         {
             _context = context;
         }

@@ -1,53 +1,86 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Facultate\\Alpha_Gym_git\\",
+  "WorkspaceRootPath": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|d:\\facultate\\alpha_gym_git\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|c:\\users\\andrei.casmir\\desktop\\alpha_gym_git\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|d:\\facultate\\alpha_gym_git\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|c:\\users\\andrei.casmir\\desktop\\alpha_gym_git\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|c:\\users\\andrei.casmir\\desktop\\alpha_gym_git\\views\\products\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:views\\products\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|c:\\users\\andrei.casmir\\desktop\\alpha_gym_git\\models\\gymcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:models\\gymcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|c:\\users\\andrei.casmir\\desktop\\alpha_gym_git\\models\\checkoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:models\\checkoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|c:\\users\\andrei.casmir\\desktop\\alpha_gym_git\\models\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:models\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|c:\\users\\andrei.casmir\\desktop\\alpha_gym_git\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|c:\\users\\andrei.casmir\\desktop\\alpha_gym_git\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|c:\\users\\andrei.casmir\\desktop\\alpha_gym_git\\views\\payments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:views\\payments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|c:\\users\\andrei.casmir\\desktop\\alpha_gym_git\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Migrations\\20240604214206_AddPaymentChanges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240604214206_AddPaymentChanges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|c:\\users\\andrei.casmir\\desktop\\alpha_gym_git\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|d:\\facultate\\alpha_gym_git\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|c:\\users\\andrei.casmir\\desktop\\alpha_gym_git\\controllers\\memberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:controllers\\memberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Migrations\\20240604210527_AddPaymentModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240604210527_AddPaymentModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|c:\\users\\andrei.casmir\\desktop\\alpha_gym_git\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|c:\\users\\andrei.casmir\\desktop\\alpha_gym_git\\controllers\\aboutus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:controllers\\aboutus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|c:\\users\\andrei.casmir\\desktop\\alpha_gym_git\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|d:\\facultate\\alpha_gym_git\\models\\contactviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:models\\contactviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|c:\\users\\andrei.casmir\\desktop\\alpha_gym_git\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|d:\\facultate\\alpha_gym_git\\views\\members\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:views\\members\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|c:\\users\\andrei.casmir\\desktop\\alpha_gym_git\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|d:\\facultate\\alpha_gym_git\\views\\home\\contact.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:views\\home\\contact.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|d:\\facultate\\alpha_gym_git\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|d:\\facultate\\alpha_gym_git\\models\\aboutusmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:models\\aboutusmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|d:\\facultate\\alpha_gym_git\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|d:\\facultate\\alpha_gym_git\\views\\members\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:views\\members\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|d:\\facultate\\alpha_gym_git\\views\\members\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:views\\members\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__mssqllocaldb/GymEntityFrameworkCoreDb/True/SqlTable/dbo.AspNetRoles.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|c:\\users\\andrei.casmir\\desktop\\alpha_gym_git\\migrations\\20240602194051_product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A075B993-FDA0-415B-98E5-B92F98042405}|AlphaGym.csproj|solutionrelative:migrations\\20240602194051_product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -57,158 +90,266 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ContactViewModel.cs",
-              "DocumentMoniker": "D:\\Facultate\\Alpha_Gym_git\\Models\\ContactViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\ContactViewModel.cs",
-              "ToolTip": "D:\\Facultate\\Alpha_Gym_git\\Models\\ContactViewModel.cs",
-              "RelativeToolTip": "Models\\ContactViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T11:00:54.141Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Facultate\\Alpha_Gym_git\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\Facultate\\Alpha_Gym_git\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-02T10:55:50.041Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Contact.cshtml.cs",
-              "DocumentMoniker": "D:\\Facultate\\Alpha_Gym_git\\Views\\Home\\Contact.cshtml.cs",
-              "RelativeDocumentMoniker": "Views\\Home\\Contact.cshtml.cs",
-              "ToolTip": "D:\\Facultate\\Alpha_Gym_git\\Views\\Home\\Contact.cshtml.cs",
-              "RelativeToolTip": "Views\\Home\\Contact.cshtml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T10:55:34.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\Facultate\\Alpha_Gym_git\\Views\\Members\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\Members\\Details.cshtml",
-              "ToolTip": "D:\\Facultate\\Alpha_Gym_git\\Views\\Members\\Details.cshtml",
-              "RelativeToolTip": "Views\\Members\\Details.cshtml",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAAAB4AAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-16T19:24:22.934Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Member.cs",
-              "DocumentMoniker": "D:\\Facultate\\Alpha_Gym_git\\Models\\Member.cs",
-              "RelativeDocumentMoniker": "Models\\Member.cs",
-              "ToolTip": "D:\\Facultate\\Alpha_Gym_git\\Models\\Member.cs",
-              "RelativeToolTip": "Models\\Member.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T19:17:13.632Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "dbo.AspNetRoles [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__mssqllocaldb/GymEntityFrameworkCoreDb/True/SqlTable/dbo.AspNetRoles.sql",
-              "ToolTip": "dbo.AspNetRoles [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-04-27T11:56:03.568Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Contact.cshtml",
-              "DocumentMoniker": "D:\\Facultate\\Alpha_Gym_git\\Views\\Home\\Contact.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Contact.cshtml",
-              "ToolTip": "D:\\Facultate\\Alpha_Gym_git\\Views\\Home\\Contact.cshtml",
-              "RelativeToolTip": "Views\\Home\\Contact.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-02T09:02:39.764Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\Facultate\\Alpha_Gym_git\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "D:\\Facultate\\Alpha_Gym_git\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwB8AAAAHAAAA",
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Controllers\\ProductsController.cs*",
+              "RelativeToolTip": "Controllers\\ProductsController.cs*",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAiwGUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T09:06:13.633Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Facultate\\Alpha_Gym_git\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Facultate\\Alpha_Gym_git\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAQwEMAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-02T09:04:11.108Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Facultate\\Alpha_Gym_git\\Views\\Members\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Members\\Index.cshtml",
-              "ToolTip": "D:\\Facultate\\Alpha_Gym_git\\Views\\Members\\Index.cshtml",
-              "RelativeToolTip": "Views\\Members\\Index.cshtml",
-              "ViewState": "AQIAABwAAAAAAAAAAAAkwDUAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-16T19:19:12.438Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "D:\\Facultate\\Alpha_Gym_git\\Views\\Members\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\Members\\Delete.cshtml",
-              "ToolTip": "D:\\Facultate\\Alpha_Gym_git\\Views\\Members\\Delete.cshtml",
-              "RelativeToolTip": "Views\\Members\\Delete.cshtml",
-              "ViewState": "AQIAAAIAAAAA/f////8HwB4AAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-16T19:27:44.642Z",
+              "WhenOpened": "2024-06-02T19:39:30.235Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "AboutUsModel.cs",
-              "DocumentMoniker": "D:\\Facultate\\Alpha_Gym_git\\Models\\AboutUsModel.cs",
-              "RelativeDocumentMoniker": "Models\\AboutUsModel.cs",
-              "ToolTip": "D:\\Facultate\\Alpha_Gym_git\\Models\\AboutUsModel.cs",
-              "RelativeToolTip": "Models\\AboutUsModel.cs",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Products\\Index.cshtml",
+              "ToolTip": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "Views\\Products\\Index.cshtml",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAwwGoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T19:39:56.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CartService.cs",
+              "DocumentMoniker": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Services\\CartService.cs",
+              "RelativeDocumentMoniker": "Services\\CartService.cs",
+              "ToolTip": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Services\\CartService.cs*",
+              "RelativeToolTip": "Services\\CartService.cs*",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAiwGAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:43:36.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PaymentsController.cs",
+              "DocumentMoniker": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Controllers\\PaymentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PaymentsController.cs",
+              "ToolTip": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Controllers\\PaymentsController.cs",
+              "RelativeToolTip": "Controllers\\PaymentsController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAhwBQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T21:27:25.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Models\\ProductViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ProductViewModel.cs",
+              "ToolTip": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Models\\ProductViewModel.cs",
+              "RelativeToolTip": "Models\\ProductViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T21:15:09.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CheckoutVIewModel.cs",
+              "DocumentMoniker": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Models\\CheckoutVIewModel.cs",
+              "RelativeDocumentMoniker": "Models\\CheckoutVIewModel.cs",
+              "ToolTip": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Models\\CheckoutVIewModel.cs",
+              "RelativeToolTip": "Models\\CheckoutVIewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T20:41:37.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GymContext.cs",
+              "DocumentMoniker": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Models\\GymContext.cs",
+              "RelativeDocumentMoniker": "Models\\GymContext.cs",
+              "ToolTip": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Models\\GymContext.cs",
+              "RelativeToolTip": "Models\\GymContext.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAB4AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:36:27.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Cart.cshtml",
+              "DocumentMoniker": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Views\\Products\\Cart.cshtml",
+              "RelativeDocumentMoniker": "Views\\Products\\Cart.cshtml",
+              "ToolTip": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Views\\Products\\Cart.cshtml",
+              "RelativeToolTip": "Views\\Products\\Cart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T19:44:05.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T19:44:17.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:49:15.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "Models\\Payment.cs",
+              "ToolTip": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Models\\Payment.cs",
+              "RelativeToolTip": "Models\\Payment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T20:56:47.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Views\\Payments\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Payments\\Index.cshtml",
+              "ToolTip": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Views\\Payments\\Index.cshtml",
+              "RelativeToolTip": "Views\\Payments\\Index.cshtml",
+              "ViewState": "AQIAAAMAAAAASDMzMzPrvxAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-04T21:01:00.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20240604214206_AddPaymentChanges.cs",
+              "DocumentMoniker": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Migrations\\20240604214206_AddPaymentChanges.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240604214206_AddPaymentChanges.cs",
+              "ToolTip": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Migrations\\20240604214206_AddPaymentChanges.cs",
+              "RelativeToolTip": "Migrations\\20240604214206_AddPaymentChanges.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T10:50:23.959Z",
+              "WhenOpened": "2024-06-04T21:42:06.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MembersController.cs",
+              "DocumentMoniker": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Controllers\\MembersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MembersController.cs",
+              "ToolTip": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Controllers\\MembersController.cs",
+              "RelativeToolTip": "Controllers\\MembersController.cs",
+              "ViewState": "AQIAAAMAAAAAMzMzM7MtwLEAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T15:46:01.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20240604210527_AddPaymentModel.cs",
+              "DocumentMoniker": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Migrations\\20240604210527_AddPaymentModel.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240604210527_AddPaymentModel.cs",
+              "ToolTip": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Migrations\\20240604210527_AddPaymentModel.cs",
+              "RelativeToolTip": "Migrations\\20240604210527_AddPaymentModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T21:05:27.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BaseController.cs",
+              "ToolTip": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "Controllers\\BaseController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:59:10.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:58:03.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AboutUs.cs",
+              "DocumentMoniker": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Controllers\\AboutUs.cs",
+              "RelativeDocumentMoniker": "Controllers\\AboutUs.cs",
+              "ToolTip": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Controllers\\AboutUs.cs",
+              "RelativeToolTip": "Controllers\\AboutUs.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T20:02:38.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "20240602194051_Product.cs",
+              "DocumentMoniker": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Migrations\\20240602194051_Product.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240602194051_Product.cs",
+              "ToolTip": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\Migrations\\20240602194051_Product.cs",
+              "RelativeToolTip": "Migrations\\20240602194051_Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:40:51.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-02T16:21:23.525Z",
               "EditorCaption": ""
             }
           ]

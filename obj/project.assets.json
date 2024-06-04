@@ -2602,6 +2602,23 @@
           "lib/netstandard2.1/StarkbankEcdsa.dll": {}
         }
       },
+      "Stripe.net/44.10.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
+          "System.Configuration.ConfigurationManager": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Stripe.net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Stripe.net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.CodeDom/5.0.0": {
         "type": "package",
         "compile": {
@@ -7600,6 +7617,30 @@
         "starkbank-ecdsa.nuspec"
       ]
     },
+    "Stripe.net/44.10.0": {
+      "sha512": "u25C0M07qAcfbqzXn/mCwi/M6Vg8wUlBa/w5FIWGfAix1Q0+3TwBtSCkecXAYAPaGhZFOUw6Od/QTB6ZaM/zVQ==",
+      "type": "package",
+      "path": "stripe.net/44.10.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "icon.png",
+        "lib/net461/Stripe.net.dll",
+        "lib/net461/Stripe.net.xml",
+        "lib/net5.0/Stripe.net.dll",
+        "lib/net5.0/Stripe.net.xml",
+        "lib/net6.0/Stripe.net.dll",
+        "lib/net6.0/Stripe.net.xml",
+        "lib/netcoreapp3.1/Stripe.net.dll",
+        "lib/netcoreapp3.1/Stripe.net.xml",
+        "lib/netstandard2.0/Stripe.net.dll",
+        "lib/netstandard2.0/Stripe.net.xml",
+        "stripe.net.44.10.0.nupkg.sha512",
+        "stripe.net.nuspec"
+      ]
+    },
     "System.CodeDom/5.0.0": {
       "sha512": "JPJArwA1kdj8qDAkY2XGjSWoYnqiM7q/3yRNkt6n28Mnn95MuEGkZXUbPBf7qc3IjwrGY5ttQon7yqHZyQJmOQ==",
       "type": "package",
@@ -8905,7 +8946,8 @@
       "Microsoft.Owin >= 4.2.2",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.2",
       "SendGrid >= 9.29.3",
-      "SendGrid.Extensions.DependencyInjection >= 1.0.1"
+      "SendGrid.Extensions.DependencyInjection >= 1.0.1",
+      "Stripe.net >= 44.10.0"
     ]
   },
   "packageFolders": {
@@ -8914,11 +8956,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Facultate\\Alpha_Gym_git\\AlphaGym.csproj",
+      "projectUniqueName": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\AlphaGym.csproj",
       "projectName": "AlphaGym",
-      "projectPath": "D:\\Facultate\\Alpha_Gym_git\\AlphaGym.csproj",
+      "projectPath": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\AlphaGym.csproj",
       "packagesPath": "C:\\Users\\andrei.casmir\\.nuget\\packages\\",
-      "outputPath": "D:\\Facultate\\Alpha_Gym_git\\obj\\",
+      "outputPath": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\andrei.casmir\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9001,6 +9043,10 @@
           "SendGrid.Extensions.DependencyInjection": {
             "target": "Package",
             "version": "[1.0.1, )"
+          },
+          "Stripe.net": {
+            "target": "Package",
+            "version": "[44.10.0, )"
           }
         },
         "imports": [

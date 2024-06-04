@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eMKqDs4m92LptpMxEw9DUbr90KQjdluV6Ph66LcP1X3isJQF7RJgWGycH0BiDV94NCe014bTjKBt2a8hS8PpBQ==",
+  "dgSpecHash": "TzGpeBvEEkgBngILyu+CbxwwSwSr67ciSuhwEbgOUW8izCPxzx7yOA9MAS/qI/1hD48fRSLVSmqaJsD7Yboulw==",
   "success": true,
-  "projectFilePath": "D:\\Facultate\\Alpha_Gym_git\\AlphaGym.csproj",
+  "projectFilePath": "C:\\Users\\andrei.casmir\\Desktop\\Alpha_Gym_git\\AlphaGym.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andrei.casmir\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\andrei.casmir\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
@@ -155,6 +155,7 @@
     "C:\\Users\\andrei.casmir\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.6\\sqlitepclraw.lib.e_sqlite3.2.1.6.nupkg.sha512",
     "C:\\Users\\andrei.casmir\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.6\\sqlitepclraw.provider.e_sqlite3.2.1.6.nupkg.sha512",
     "C:\\Users\\andrei.casmir\\.nuget\\packages\\starkbank-ecdsa\\1.3.3\\starkbank-ecdsa.1.3.3.nupkg.sha512",
+    "C:\\Users\\andrei.casmir\\.nuget\\packages\\stripe.net\\44.10.0\\stripe.net.44.10.0.nupkg.sha512",
     "C:\\Users\\andrei.casmir\\.nuget\\packages\\system.codedom\\5.0.0\\system.codedom.5.0.0.nupkg.sha512",
     "C:\\Users\\andrei.casmir\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",
     "C:\\Users\\andrei.casmir\\.nuget\\packages\\system.composition\\7.0.0\\system.composition.7.0.0.nupkg.sha512",

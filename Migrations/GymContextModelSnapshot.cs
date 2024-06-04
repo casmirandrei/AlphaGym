@@ -22,25 +22,6 @@ namespace AlphaGym.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("AlphaGym.Models.Gym", b =>
-                {
-                    b.Property<int>("GymId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("GymId"));
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("GymId");
-
-                    b.ToTable("Gyms");
-                });
-
             modelBuilder.Entity("AlphaGym.Models.Member", b =>
                 {
                     b.Property<int>("Id")
@@ -48,9 +29,6 @@ namespace AlphaGym.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int?>("GymId")
-                        .HasColumnType("int");
 
                     b.Property<int>("MonthlySubscription")
                         .HasColumnType("int");
@@ -71,11 +49,133 @@ namespace AlphaGym.Migrations
                     b.Property<DateTime>("SubscriptionStartDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("SubscriptionType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("GymId");
-
                     b.ToTable("Members");
+                });
+
+            modelBuilder.Entity("AlphaGym.Models.Payment", b =>
+                {
+                    b.Property<int>("PaymentID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PaymentID"));
+
+                    b.Property<double>("Amount")
+                        .HasColumnType("float");
+
+                    b.Property<string>("CardNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsPaid")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("PaymentDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserID")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("PaymentID");
+
+                    b.ToTable("Payments");
+                });
+
+            modelBuilder.Entity("AlphaGym.Models.Product", b =>
+                {
+                    b.Property<int>("ProductID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductID"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImagePath")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ProductName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("UnitPrice")
+                        .HasColumnType("float");
+
+                    b.HasKey("ProductID");
+
+                    b.ToTable("Products");
+
+                    b.HasData(
+                        new
+                        {
+                            ProductID = 1,
+                            Description = " Access to gym facilities. Entrance until 16:00 & 1 entry per day",
+                            ImagePath = "carconvert.png",
+                            ProductName = "Basic Subscription",
+                            UnitPrice = 30.0
+                        },
+                        new
+                        {
+                            ProductID = 2,
+                            Description = " Access to all facilities and classes. No entry limit",
+                            ImagePath = "carearly.png",
+                            ProductName = "Premium subcription",
+                            UnitPrice = 50.0
+                        },
+                        new
+                        {
+                            ProductID = 3,
+                            Description = " Access to all facilities and classes. No entry limit. Personalized workouts. Progress tracking and goal setting",
+                            ImagePath = "carfast.png",
+                            ProductName = "Personal trainer subscription",
+                            UnitPrice = 100.0
+                        });
+                });
+
+            modelBuilder.Entity("AlphaGym.Models.PurchasedItem", b =>
+                {
+                    b.Property<int>("PurchasedItemID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PurchasedItemID"));
+
+                    b.Property<int>("PaymentID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ProductName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<double>("UnitPrice")
+                        .HasColumnType("float");
+
+                    b.HasKey("PurchasedItemID");
+
+                    b.HasIndex("PaymentID");
+
+                    b.ToTable("PurchasedItem");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -280,11 +380,15 @@ namespace AlphaGym.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("AlphaGym.Models.Member", b =>
+            modelBuilder.Entity("AlphaGym.Models.PurchasedItem", b =>
                 {
-                    b.HasOne("AlphaGym.Models.Gym", null)
-                        .WithMany("Members")
-                        .HasForeignKey("GymId");
+                    b.HasOne("AlphaGym.Models.Payment", "Payment")
+                        .WithMany("PurchasedItems")
+                        .HasForeignKey("PaymentID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Payment");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -338,9 +442,9 @@ namespace AlphaGym.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("AlphaGym.Models.Gym", b =>
+            modelBuilder.Entity("AlphaGym.Models.Payment", b =>
                 {
-                    b.Navigation("Members");
+                    b.Navigation("PurchasedItems");
                 });
 #pragma warning restore 612, 618
         }

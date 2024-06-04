@@ -20,8 +20,21 @@
                 </div>
 
                 <div class="mb-3">
+                    <label asp-for="SubscriptionType" class="form-label">Subscription Type:</label>
+                    <select asp-for="SubscriptionType" id="subscriptionType" name="SubscriptionType" class="form-control" required>
+                        <option value="">Select Subscription</option>
+                        <option value="All day">All day</option>
+                        <option value="Half Day">Half Day</option>
+                        <option value="Personal Trainer">Personal Trainer</option>
+                        <option value="Student">Student</option>
+                        <option value="Special">Special</option>
+                    </select>
+                    <span asp-validation-for="SubscriptionType" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
                     <label asp-for="PhoneNumber" class="form-label">Phone Number:</label>
-                    <input asp-for="PhoneNumber" class="form-control" required />
+                    <input asp-for="PhoneNumber" class="form-control" id="PhoneNumber" required />
                     <div class="invalid-feedback">@Html.ValidationMessageFor(model => model.PhoneNumber)</div>
                 </div>
 
@@ -37,7 +50,7 @@
                     <div class="invalid-feedback">@Html.ValidationMessageFor(model => model.SubscriptionExpiryDate)</div>
                 </div>
 
-                <div class="text-center ">
+                <div class="text-center">
                     <button type="submit" class="btn btn-primary create_button">Save</button>
                 </div>
             </form>
@@ -54,8 +67,16 @@
         $(document).ready(function () {
             $('#subscriptionExpiryDate').on('change', function () {
                 var newExpiryDate = $(this).val();
-                // Update Subscription Expiry Date in Create view
+                // Update Subscription Expiry Date in Member List view
                 $('#subscriptionExpiryDateCreate').val(newExpiryDate);
+            });
+
+            // Allow only numeric input in phone number field
+            $('#PhoneNumber').on('keypress', function (event) {
+                var charCode = event.which ? event.which : event.keyCode;
+                if (charCode < 48 || charCode > 57) {
+                    event.preventDefault();
+                }
             });
         });
     </script>

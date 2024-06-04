@@ -1,0 +1,106 @@
+﻿@model IEnumerable<AlphaGym.Models.Product>
+
+@{
+    ViewData["Title"] = "Products";
+}
+
+<h2>Products</h2>
+
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @ViewBag.Message
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        @foreach (var product in Model)
+        {
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card mb-4 shadow-sm">
+                    <img src="@Url.Content("~/images/" + product.ImagePath)" class="card-img-top" alt="@product.ProductName">
+                    <div class="card-body">
+                        <h5 class="card-title">@product.ProductName</h5>
+                        <p class="card-text">@product.Description</p>
+                        <p class="card-text"><strong>Price:</strong> @product.UnitPrice.ToString("C")</p>
+                        <a href="@Url.Action("AddToCart", "Products", new { id = product.ProductID })" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<style>
+    .pricing-plan-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .pricing-plan {
+        flex: 1 0 30%; /* Adjust the width of the plan cards */
+        margin: 10px;
+    }
+
+    .pricing-plan__header {
+        background-color: #f8f9fa;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .pricing-plan__title {
+        font-size: 1.5em;
+    }
+
+    .pricing-plan__description {
+        padding: 15px;
+    }
+
+    .pricing-plan__list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .pricing-plan__feature {
+        padding: 5px 0;
+    }
+
+    .pricing-plan__actions {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .pricing-plan__cost {
+        font-size: 1.2em;
+        margin: 0;
+    }
+
+    .pricing-plan__text {
+        margin: 0;
+    }
+
+    .pricing-plan__button {
+        margin-top: 10px;
+    }
+
+    /* Custom styles for product cards */
+    .card {
+        flex: 1 0 30%; /* Adjust the width of the product cards */
+        margin: 10px;
+    }
+
+        .card img {
+            max-height: 200px;
+            object-fit: cover;
+        }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+</style>

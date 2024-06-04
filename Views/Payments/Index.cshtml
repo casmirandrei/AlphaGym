@@ -1,0 +1,74 @@
+﻿@model IEnumerable<AlphaGym.Models.Payment>
+
+@{
+    ViewData["Title"] = "Manage Payments";
+}
+
+<h2>Manage Payments</h2>
+
+<style>
+    .action-buttons {
+        /* display: flex; */
+        gap: 5px;
+    }
+    .action-buttons form {
+        display: inline-block;
+        margin: 0;
+        
+    }
+
+    .table th {
+        text-align: center;
+    }
+</style>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>User</th>
+            <th>Phone No</th>
+            <th>Payment Date</th>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Amount</th>
+            <th>Total</th>
+           @*  <th>Card Number</th> *@
+            <th>Is Paid</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var payment in Model)
+        {
+            foreach (var item in payment.PurchasedItems)
+            {
+                <tr>
+                    <td>@payment.UserName</td>
+                    <td>@payment.PhoneNumber</td>
+                    <td>@payment.PaymentDate</td>
+                    <td>@item.ProductName</td>
+                    <td>@item.Quantity</td>
+                    <td>@item.UnitPrice.ToString("C")</td>
+                    <td>@((item.Quantity * item.UnitPrice).ToString("C"))</td>
+                    @* <td>@payment.CardNumber</td> *@
+                    <td>@payment.IsPaid</td>
+                    <td class="action-buttons">
+                        <form asp-action="ValidatePayment" method="post">
+                            <input type="hidden" name="id" value="@payment.PaymentID" />
+                            <button type="submit" class="btn btn-success" @(payment.IsPaid ? "disabled" : "")>Validate</button>
+                        </form>
+
+                        <form asp-action="InvalidatePayment" method="post">
+                            <input type="hidden" name="id" value="@payment.PaymentID" />
+                            <button type="submit" class="btn btn-warning" @(!payment.IsPaid ? "disabled" : "")>Invalidate</button>
+                        </form>
+                        <form asp-action="DeletePayment" method="post">
+                            <input type="hidden" name="id" value="@payment.PaymentID" />
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

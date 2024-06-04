@@ -6,15 +6,81 @@
 
 <script>
     window.onload = function () {
-        // Get the input element for Subscription Months
+        // Get the input elements
         var subscriptionMonthsInput = document.getElementById('subscriptionMonths');
-        // Get the input element for Monthly Subscription
         var monthlySubscriptionInput = document.getElementById('MonthlySubscription');
+        var phoneNumberInput = document.getElementById('PhoneNumber');
+        var nameInput = document.getElementById('nameInput');
+        var subscriptionTypeInput = document.getElementById('subscriptionType');
+        var subscriptionStartDateInput = document.getElementById('subscriptionStartDate');
 
         // Add event listener to Subscription Months input
         subscriptionMonthsInput.addEventListener('input', function () {
-            // Set the value of Monthly Subscription to the value of Subscription Months
             monthlySubscriptionInput.value = subscriptionMonthsInput.value;
+        });
+
+        // Validate phone number input
+        phoneNumberInput.addEventListener('input', function () {
+            var phonePattern = /^\d{10}$/;
+            if (phonePattern.test(phoneNumberInput.value)) {
+                phoneNumberInput.classList.remove('is-invalid');
+                phoneNumberInput.classList.add('is-valid');
+            } else {
+                phoneNumberInput.classList.remove('is-valid');
+                phoneNumberInput.classList.add('is-invalid');
+            }
+        });
+
+        // Allow only numeric input in phone number field
+        phoneNumberInput.addEventListener('keypress', function (event) {
+            var charCode = event.charCode;
+            if (charCode < 48 || charCode > 57) {
+                event.preventDefault();
+            }
+        });
+
+        // Validate name input
+        nameInput.addEventListener('input', function () {
+            if (nameInput.value.trim() !== "") {
+                nameInput.classList.remove('is-invalid');
+                nameInput.classList.add('is-valid');
+            } else {
+                nameInput.classList.remove('is-valid');
+                nameInput.classList.add('is-invalid');
+            }
+        });
+
+        // Validate subscription type input
+        subscriptionTypeInput.addEventListener('change', function () {
+            if (subscriptionTypeInput.value !== "") {
+                subscriptionTypeInput.classList.remove('is-invalid');
+                subscriptionTypeInput.classList.add('is-valid');
+            } else {
+                subscriptionTypeInput.classList.remove('is-valid');
+                subscriptionTypeInput.classList.add('is-invalid');
+            }
+        });
+
+        // Validate subscription start date input
+        subscriptionStartDateInput.addEventListener('input', function () {
+            if (subscriptionStartDateInput.value !== "") {
+                subscriptionStartDateInput.classList.remove('is-invalid');
+                subscriptionStartDateInput.classList.add('is-valid');
+            } else {
+                subscriptionStartDateInput.classList.remove('is-valid');
+                subscriptionStartDateInput.classList.add('is-invalid');
+            }
+        });
+
+        // Validate subscription months input
+        subscriptionMonthsInput.addEventListener('input', function () {
+            if (subscriptionMonthsInput.value > 0) {
+                subscriptionMonthsInput.classList.remove('is-invalid');
+                subscriptionMonthsInput.classList.add('is-valid');
+            } else {
+                subscriptionMonthsInput.classList.remove('is-valid');
+                subscriptionMonthsInput.classList.add('is-invalid');
+            }
         });
     };
 </script>
@@ -29,31 +95,44 @@
 
                 <div class="mb-3">
                     <label asp-for="Name" class="form-label">Name:</label>
-                    <input asp-for="Name" id="nameInput" class="form-control" required />
+                    <input asp-for="Name" id="nameInput" class="form-control validate" required />
                     <div class="invalid-feedback">@Html.ValidationMessageFor(model => model.Name)</div>
                 </div>
 
+                <div class="mb-3">
+                    <label asp-for="SubscriptionType">Subscription Type:</label>
+                    <select asp-for="SubscriptionType" id="subscriptionType" name="SubscriptionType" class="form-control validate" required>
+                        <option value="">Select Subscription</option>
+                        <option value="All day">All day</option>
+                        <option value="Half Day">Half Day</option>
+                        <option value="Personal Trainer">Personal Trainer</option>
+                        <option value="Student">Student</option>
+                        <option value="Special">Special</option>
+                    </select>
+                </div>
 
                 <div class="mb-3">
                     <label asp-for="PhoneNumber" class="form-label">Phone Number:</label>
-                    <input asp-for="PhoneNumber" class="form-control" id="PhoneNumber" required />
+                    <input asp-for="PhoneNumber" class="form-control validate" id="PhoneNumber" required />
                     <div class="invalid-feedback">@Html.ValidationMessageFor(model => model.PhoneNumber)</div>
                 </div>
 
+             
+
                 <div class="mb-3" hidden>
                     <label asp-for="MonthlySubscription" class="form-label">Monthly Subscription:</label>
-                    <input asp-for="MonthlySubscription" class="form-control" id="MonthlySubscription" required />
+                    <input asp-for="MonthlySubscription" class="form-control validate" id="MonthlySubscription" required />
                     <div class="invalid-feedback">@Html.ValidationMessageFor(model => model.MonthlySubscription)</div>
                 </div>
 
                 <div class="mb-3">
                     <label for="subscriptionStartDate" class="form-label">Subscription Start Date:</label>
-                    <input type="date" class="form-control" id="subscriptionStartDate" name="subscriptionStartDate" required />
+                    <input type="date" class="form-control validate" id="subscriptionStartDate" name="subscriptionStartDate" required />
                 </div>
 
                 <div class="mb-3">
                     <label for="subscriptionMonths" class="form-label">Subscription Months:</label>
-                    <input type="number" class="form-control" id="subscriptionMonths" name="subscriptionMonths" required />
+                    <input type="number" class="form-control " id="subscriptionMonths" name="subscriptionMonths" required />
                 </div>
 
                 <div class="text-center">

@@ -16,6 +16,9 @@ namespace AlphaGym.Models
         [DataType(DataType.PhoneNumber)]
         public string PhoneNumber { get; set; }
 
+        
+        public string SubscriptionType { get; set; }
+
         [Required]
         [Display(Name = "Monthly Subscription")]
         public int MonthlySubscription { get; set; }
@@ -34,4 +37,3 @@ namespace AlphaGym.Models
 
     }
 }
-// De implementat: tipul de abonament dintre cele 3 pe fiecare persoana, dropdown
